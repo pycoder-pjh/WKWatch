@@ -54,7 +54,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UISc
 
         
         // loading URL
-        let WatchURL = "https://watch-dr.paypalcorp.com"
+        let WatchURL = "PLACE YOUR DESIRED URL HERE"
         let Wurl = NSURL(string: WatchURL)
         let request = NSURLRequest(url: Wurl! as URL)
         webView.load(request as URLRequest)
