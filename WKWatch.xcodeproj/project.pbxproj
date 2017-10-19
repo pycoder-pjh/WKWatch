@@ -14,6 +14,8 @@
 		D574B1281F8F321F0080573A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D574B1261F8F321F0080573A /* LaunchScreen.storyboard */; };
 		D574B1331F8F32200080573A /* WKWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D574B1321F8F32200080573A /* WKWatchTests.swift */; };
 		D574B13E1F8F32200080573A /* WKWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D574B13D1F8F32200080573A /* WKWatchUITests.swift */; };
+		D574B14C1F8F97470080573A /* watch.png in Resources */ = {isa = PBXBuildFile; fileRef = D574B14B1F8F97470080573A /* watch.png */; };
+		D574B14E1F8FA3D10080573A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D574B14D1F8FA3D10080573A /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D574B1391F8F32200080573A /* WKWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D574B13D1F8F32200080573A /* WKWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWatchUITests.swift; sourceTree = "<group>"; };
 		D574B13F1F8F32200080573A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D574B14B1F8F97470080573A /* watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watch.png; sourceTree = "<group>"; };
+		D574B14D1F8FA3D10080573A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 			children = (
 				D574B11D1F8F321F0080573A /* AppDelegate.swift */,
 				D574B11F1F8F321F0080573A /* ViewController.swift */,
+				D574B14D1F8FA3D10080573A /* Reachability.swift */,
 				D574B1211F8F321F0080573A /* Main.storyboard */,
 				D574B1241F8F321F0080573A /* Assets.xcassets */,
 				D574B1261F8F321F0080573A /* LaunchScreen.storyboard */,
+				D574B14B1F8F97470080573A /* watch.png */,
 				D574B1291F8F321F0080573A /* Info.plist */,
 			);
 			path = WKWatch;
@@ -193,7 +199,7 @@
 				TargetAttributes = {
 					D574B1191F8F321F0080573A = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D574B12D1F8F32200080573A = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -235,6 +241,7 @@
 				D574B1281F8F321F0080573A /* LaunchScreen.storyboard in Resources */,
 				D574B1251F8F321F0080573A /* Assets.xcassets in Resources */,
 				D574B1231F8F321F0080573A /* Main.storyboard in Resources */,
+				D574B14C1F8F97470080573A /* watch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 			files = (
 				D574B1201F8F321F0080573A /* ViewController.swift in Sources */,
 				D574B11E1F8F321F0080573A /* AppDelegate.swift in Sources */,
+				D574B14E1F8FA3D10080573A /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +422,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WKWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = paypal.WKWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -426,11 +438,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WKWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = paypal.WKWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -507,6 +523,7 @@
 				D574B1441F8F32200080573A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D574B1451F8F32200080573A /* Build configuration list for PBXNativeTarget "WKWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +532,7 @@
 				D574B1471F8F32200080573A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D574B1481F8F32200080573A /* Build configuration list for PBXNativeTarget "WKWatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +541,7 @@
 				D574B14A1F8F32200080573A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
