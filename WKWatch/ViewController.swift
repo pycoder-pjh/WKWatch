@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  WKWatch
 //
-//  Created by Palle, Jagadeeswaraiah(AWF) on 20/07/1939 Saka.
-//  Copyright © 1939 Saka PayPal. All rights reserved.
+//  Created by Palle, Jagadeeswaraiah(AWF) on 13/10/2017 .
+//  
 //
 
 import UIKit
@@ -74,7 +74,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, UISc
             print("network reachable")
         }else{
             print("network not reachable.. try again")
-            let alert = UIAlertController(title: "No Internet Connection", message: "Please..Make sure device is connected to Internet and VPN", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "No Internet Connection", message: "Please..Make sure device is connected to Internet and also to VPN if required", preferredStyle: UIAlertControllerStyle.alert)
             let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(result:UIAlertAction) -> Void in self.webView.reload()})
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
