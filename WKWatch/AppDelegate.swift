@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  WKWatch
 //
-//  Created by Palle, Jagadeeswaraiah(AWF) on 20/07/1939 Saka.
-//  Copyright © 1939 Saka PayPal. All rights reserved.
+//  Created by Palle, Jagadeeswaraiah(AWF) on 13/10/2017.
 //
 
 import UIKit
